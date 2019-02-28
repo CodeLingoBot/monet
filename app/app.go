@@ -23,7 +23,7 @@ func Attach(url string) {
 
 }
 
-// Return a number for a page (default to 1)
+// PageNumber returns a number for a page (default to 1)
 func PageNumber(page string) int {
 	num := 1
 	if len(page) > 0 {

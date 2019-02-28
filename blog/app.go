@@ -30,7 +30,7 @@ func Attach(url string) {
 	AtomHref = url + "blog/atom"
 }
 
-// Render the post, using the cached ContentRendered if available, or generating
+// RenderPost renders the post, using the cached ContentRendered if available, or generating
 // and re-saving it to the database if not
 func RenderPost(post *Post) string {
 	if len(post.ContentRendered) == 0 {
